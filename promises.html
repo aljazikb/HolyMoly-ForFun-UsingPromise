@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 20%;">
+        <h3 id="t1" style="visibility: hidden;">JavaScript Promises Example</h3>
+        <h3 id="t2" style="visibility: hidden;"> A</h3>
+        <h3 id="t3" style="visibility: hidden;"> L</h3>
+        <h3 id="t4" style="visibility: hidden;">J</h3>
+        <h3 id="t5" style="visibility: hidden;"> A</h3>
+        <h3 id="t6" style="visibility: hidden;"> Z</h3>
+        <h3 id="t7" style="visibility: hidden;"> I</h3>
+        <h1 id="t8" style="visibility: hidden; color: red;"> HOLY MOLYYYYYYYYYYYYYYYYYY</h1>
+    </div>
+</body>
+
+
+
+
+<script>
+ 
+   
+   new Promise((resolve,reject)=>{
+    //async
+        setTimeout(()=>{
+            document.getElementById("t1").style.visibility="visible"
+            resolve()
+        },1000)
+
+    }).then(()=>{
+           return new Promise((resolve)=>{
+
+            setTimeout(()=>{
+                document.getElementById("t2").style.visibility="visible"
+                resolve()
+            },1000)
+
+        })
+
+    }).then(()=>{
+
+        return new Promise((resolve)=>{
+            setTimeout(()=>{
+                document.getElementById("t3").style.visibility="visible"
+                resolve()
+            },1000)
+        })
+
+    }).then (()=>{
+        return new Promise((resolve)=>{
+            setTimeout(()=>{
+                 document.getElementById("t4").style.visibility="visible"
+                 resolve()
+            },1000)
+        })
+    }).then(()=>{
+         return new Promise((resolve)=>{
+         setTimeout(()=>{
+                 document.getElementById("t5").style.visibility="visible"
+                 resolve()
+            },1000)
+        })   
+    }).then(()=>{
+         return new Promise((resolve)=>{
+         setTimeout(()=>{
+                 document.getElementById("t6").style.visibility="visible"
+                 resolve()
+            },1000)
+        })   
+    }).then(()=>{
+         return new Promise((resolve)=>{
+         setTimeout(()=>{
+                 document.getElementById("t7").style.visibility="visible"
+                 resolve()
+            },1000)
+        })   
+    }).then(()=>{
+         setTimeout(()=>{
+                 document.getElementById("t8").style.visibility="visible"
+                 resolve()
+            },1000)
+    })
+</script>
+</html>
